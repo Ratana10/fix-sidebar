@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Using Flowbite V3.2</title>
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <style>
+    /* Simple flex layout */
+    body {
+      display: flex;
+      min-height: 100vh;
+    }
+    
+    /* Sidebar stays fixed on left */
+    #default-sidebar {
+      position: fixed;
+      left: 0;
+      top: 0;
+      height: 100vh;
+      width: 16rem; /* w-64 */
+    }
+    
+    /* Main content sits next to sidebar */
+    .main-content {
+      margin-left: 16rem; /* Same as sidebar width */
+      width: calc(100% - 16rem);
+      flex: 1;
+    }
+    
+    /* Mobile: hide sidebar by default */
+    @media (max-width: 640px) {
+      .main-content {
+        margin-left: 0;
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+
+<script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+
+</body>
+
+</html>
